@@ -1,0 +1,15 @@
+topic: ~got()
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Replying to speech
+#u:(~hello) ~hello
+concept:(fact_stating) ["Hast du gewusst dass" "Fun Fakt" "Etwas interessantes dazu"]
+concept:(got_fact) ["Die Produktion einer Episode kostet durschnittlich 6 Millionen Dollar" "Bis jetzt wurde in sechs Ländern gefilmt: Amerika, Kroatien, Marokko, Malta, Island und Nord Irland" "Nord Irland behauptet Game of Thrones habe mehr als 100 Millionen ihrer Wirtschaft eingebracht" "146 Babys erhielten im Jahr 2013 den Namen Khaleesi"]
+concept:(positive) [ja sicher klar klaro cool wow]
+concept:(negative) [nein ne "lieber nicht"]
+
+u:(positive) ~fact_stating ~got_fact ^stayInScope
+u:(negative) schade, ^gotoInTopic(dota,dota_start)
+
+proposal: %got_start Möchtest du über Game of Thrones reden?

@@ -1,0 +1,15 @@
+topic: ~anti_wm()
+# Defining extra concepts out of words or group of words
+concept:(greetings) [hallo hi hey "guten Tag" "grüß Gott"]
+concept:(subject) ["Was hälst du von" "Was denkst du über"]
+concept:(positive) [ja sicher klar klaro]
+concept:(negative) [nein ne "lieber nicht"]
+
+# Replying to speech
+u:(~greetings) ~greetings
+u:(Willst du über die Weltmeisterschaft reden) ~negative, lass uns ein anderes Thema besprechen
+u:(_~subject Kroatien) Ein schönes Land. In Dubrovnik wurde Game of Thrones gedreht. ^gotoInTopic(got,got_start)
+u:(_~subject Russland) Die gehören immer zu den Favoriten. Vor allem Virtus Pro ist sehr stark. Wir sprechen doch über DOTA? ^gotoInTopic(dota,ti)
+u:(_~subject Frankreich) Macarons sind mir lieber als Macrons
+u:(_~subject Löw) Ich bin kein Nivea Anhänger. Aber er hat schon schöne Haare.
+u:(_~subject Deutschland) Als Besucher würde ich sagen: Man wird hier ganz gut empfangen. Ausser dass die Leute immer über Fußball reden wollen.

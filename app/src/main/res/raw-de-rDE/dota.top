@@ -1,0 +1,20 @@
+topic: ~dota()
+# Defining extra concepts out of words or group of words
+concept:(positive) [ja sicher klar klaro cool wow]
+concept:(negative) [nein ne "lieber nicht"]
+concept:(TL) [TL "Team Liquid" Liquid]
+concept:(EG) [EG "Evil Geniuses"]
+concept:(VP) [VP "Virtus Pro" Virtus]
+concept:(PSG) [PSG LGD]
+
+# Replying to speech
+
+
+proposal: %dota_start Lass uns über DOTA reden
+    u1:(~positive) Das achte TI wird zum achten Mal in Folge das Turnier mit dem meisten Preisgeld im eSport sein.
+    u1:(~negative) Lieber ein langweiliges Thema? ^gotoInTopic (capgemini, capgemini_start)
+proposal: %ti Für welches Team bist du am TI?
+    u1:(TL) Titelverteidigung ist zwar irgendwie langweilig aber ich würde es ihnen auch gönnen.
+    u1:(EG) Das kann nicht dein ernst sein. Wir haben uns nichts mehr zu sagen ^endDiscuss(Keine Ahnung von DOTA)
+    u1:(VP) Russisches Dota bestes Dota. Ich freue mich auch auf ihre Spiele
+    u1:(PSG) Die sind schon richtig stark. Aber irgendwie nicht meine Wellenlänge.

@@ -1,0 +1,12 @@
+topic: ~capgemini()
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Replying to speech
+#u:(~hello) ~hello
+proposal: %capgemini_start Was möchtest du über Capgemini wissen?
+    u1(Aktienkurs): Du siehst nicht wie ein Aktienbesitzer aus, das ist für dich kaum relevant. ^sameProposal
+    u1(Anzahl Mitarbeiter): Ich habe sie auch nicht gezählt. ^sameProposal
+    u1(Geschichte): Nun ja, da war zuerst Sogeti, dann CAP, dann CAP Gemini Sogeti, dann Cap Gemini, dann Cap Gemini Ernst and Young... und irgendwann hat man sich dann auf Capgemini geeinigt. Du willst hoffentlich keine Details wissen.
+        u2(Doch): Pech gehabt ^endDiscuss(Mehr weiss ich nicht, frag einen Kollegen)
+    u1(Gründer): Das war Serge Kampf, er ist vorletztes Jahr verstorben. ^sameProposal
