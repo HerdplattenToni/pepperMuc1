@@ -13,3 +13,4 @@ u:(_~subject Russland) Die gehören immer zu den Favoriten. Vor allem Virtus Pro
 u:(_~subject Frankreich) Macarons sind mir lieber als Macrons
 u:(_~subject Löw) Ich bin kein Nivea Anhänger. Aber er hat schon schöne Haare.
 u:(_~subject Deutschland) Als Besucher würde ich sagen: Man wird hier ganz gut empfangen. Ausser dass die Leute immer über Fußball reden wollen.
+u:(tanze) ^execute(danceExecutor)
